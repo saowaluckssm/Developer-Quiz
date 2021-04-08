@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+:root {
+  background-color: aliceblue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* h1, h2, h3, h4 {
+  margin-bottom: 1rem;
+} */
+
+h1 {
+  font-size: 5rem;
+  color: steelblue;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-size: 1.5rem;
+  width: 15rem;
+  padding: 1rem 0;
+  text-align: center;
+  border: steelblue 0.1rem solid;
+  border-radius: 5px;
+  background-color: white;
+  color: steelblue;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.2rem);
+  transition: transform 1s;
+
+}
+
+/* quiz page */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+  border: 0.1rem solid rgba(86, 165, 235, 0.5);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 1s;
+}
+
+.choice-prefix {
+  padding: 1rem 1.5rem;
+  background-color: #56a5eb;
+  color: white;
+}
+
+.choice-text {
+  padding: 1rem;
+  width: 100%;
+}
+
+
+/* style for choice background */
+
+.correct {
+  background-color: rgb(128, 223, 128);
+}
+
+.incorrect {
+  background-color: rgb(243, 7, 7);
+}
+
+/* style for head up display */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+/* end page heart shape score */
+
+.heart-score {
+  position:absolute;
+  z-index:3;
+  /* margin-left: 0px; */
+  margin-top: 60px;
+  color:white;
+}
+
+.heart-shape{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(250,184,66);
+  transform: rotate(45deg);
+  margin-bottom: 5rem;
+}
+
+.heart-shape:before{
+  position: absolute;
+  bottom: 0px;
+  left: -55px;
+  width: 100px;
+  height: 100px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(250,184,66);
+}
+
+.heart-shape:after{
+  position: absolute;
+  top: -55px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  content: '';
+   
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+ 
+  background-color: rgba(250,184,66);
+}
+
+
+
+
+
+
+
